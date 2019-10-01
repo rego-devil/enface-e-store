@@ -393,5 +393,87 @@ body {
   background-size: contain;
 }
 
+.doneIcon {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background: url('../images/done.svg') top left no-repeat;
+  background-size: contain;
+}
+
+.failedIcon {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background: url('../images/failed.svg') top left no-repeat;
+  background-size: contain;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
+
+.loading div {
+  width: 6px;
+  height: 6px;
+  margin: 10px 4px 0 4px;
+  background: #00AEEF;
+  border-radius: 50%;
+  animation: 0.6s bounce infinite alternate;
+}
+
+.loading div:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.loading div:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.loading div:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+.loading.loading--white div {
+  background: #fff;
+}
+
+.loading.loading--inButton div {
+  margin-top: 20px;
+}
+
+@keyframes bounce {
+  to {
+    opacity: 0.3;
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+
+.loadingText {
+  padding-top: 30px;
+  font-weight: 300;
+}
+
+
+.status {
+
+  &__ico {
+    margin-top: 30px;
+  }
+
+  &__title {
+    color: #000;
+    font-size: 1.5rem;
+  }
+
+  &__state {
+    padding-top: 40px;
+  }
+}
+
+
 
 
