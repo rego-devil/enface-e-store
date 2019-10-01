@@ -170,7 +170,7 @@ body {
     padding-top: 10px;
     color: #979797; }
   .product--cup .product__image {
-    margin-right: 30px; }
+    left: -10px; }
 
 .button {
   position: relative;
@@ -192,7 +192,8 @@ body {
   background-color: #00AEEF;
   border-radius: 10px;
   transition: none;
-  text-align: center; }
+  text-align: center;
+  min-width: 100px; }
   .button:active, .button.green:active {
     background-color: #979797; }
   .button.green {
@@ -218,7 +219,7 @@ body {
     border-radius: 10px;
     padding: 40px;
     text-align: center; }
-    .overlay__content img {
+    .overlay__content img, .overlay__content video {
       max-width: 100%;
       display: block; }
     .overlay__content .controls {
@@ -227,3 +228,122 @@ body {
         margin-left: 20px; }
         .overlay__content .controls .button:first-child {
           margin-left: 0; }
+
+.selfie {
+  position: relative;
+  width: 100%;
+  background: red; }
+  .selfie__faceoutline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -121px;
+    margin-top: -169px;
+    width: 242px;
+    height: 338px;
+    background: url("../images/oval.svg") top left no-repeat;
+    background-size: contain; }
+
+.pin {
+  text-align: center;
+  padding: 0 0;
+  white-space: normal; }
+  .pin .title {
+    font-size: 1.285rem;
+    padding: 0 50px; }
+  .pin .info {
+    font-size: 0.785rem;
+    height: 20px;
+    margin-top: 20px;
+    padding: 0 50px; }
+  .pin .subText {
+    font-size: 1rem;
+    padding-top: 20px;
+    height: 20px; }
+  .pin .points {
+    margin: 50px 0 0 0;
+    font-size: 0;
+    line-height: 0;
+    min-height: 13px; }
+    .pin .points li {
+      display: inline-block;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background: #B4B4B4;
+      margin: 0 10px 0 10px; }
+      .pin .points li.active {
+        background: #00AEEF; }
+      .pin .points li:nth-last-child(15):first-child, .pin .points li:nth-last-child(15):first-child ~ li {
+        margin: 0 5px; }
+      .pin .points li:nth-last-child(14):first-child, .pin .points li:nth-last-child(14):first-child ~ li {
+        margin: 0 5px; }
+      .pin .points li:nth-last-child(13):first-child, .pin .points li:nth-last-child(13):first-child ~ li {
+        margin: 0 5px; }
+      .pin .points li:nth-last-child(12):first-child, .pin .points li:nth-last-child(12):first-child ~ li {
+        margin: 0 5px; }
+      .pin .points li:nth-last-child(11):first-child, .pin .points li:nth-last-child(11):first-child ~ li {
+        margin: 0 5px; }
+      .pin .points li:nth-last-child(10):first-child, .pin .points li:nth-last-child(10):first-child ~ li {
+        margin: 0 5px; }
+      .pin .points li:nth-last-child(9):first-child, .pin .points li:nth-last-child(9):first-child ~ li {
+        margin: 0 5px 0 5px; }
+      .pin .points li:nth-last-child(8):first-child, .pin .points li:nth-last-child(8):first-child ~ li {
+        margin: 0 6px 0 6px; }
+      .pin .points li:nth-last-child(7):first-child, .pin .points li:nth-last-child(7):first-child ~ li {
+        margin: 0 7px 0 7px; }
+      .pin .points li:nth-last-child(6):first-child, .pin .points li:nth-last-child(6):first-child ~ li {
+        margin: 0 8px 0 8px; }
+      .pin .points li:nth-last-child(5):first-child, .pin .points li:nth-last-child(5):first-child ~ li {
+        margin: 0 10px 0 10px; }
+      .pin .points li:nth-last-child(4):first-child, .pin .points li:nth-last-child(4):first-child ~ li {
+        margin: 0 12px 0 12px; }
+      .pin .points li:nth-last-child(3):first-child, .pin .points li:nth-last-child(3):first-child ~ li {
+        margin: 0 14px 0 14px; }
+      .pin .points li:nth-last-child(2):first-child, .pin .points li:nth-last-child(2):first-child ~ li {
+        margin: 0 16px 0 16px; }
+  .pin .numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 270px;
+    margin: 35px auto 0 auto; }
+    .pin .numbers li {
+      border-radius: 10px;
+      width: 70px;
+      height: 70px;
+      border: none;
+      background: #00AEEF;
+      margin: 12px 6px 0 6px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.857rem;
+      font-weight: 300;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center; }
+      .pin .numbers li:active, .pin .numbers li.red:active, .pin .numbers li.green:active {
+        background: #979797; }
+      .pin .numbers li.disabled {
+        background: #DCDCDC; }
+      .pin .numbers li.red {
+        background: #E84848; }
+      .pin .numbers li.green {
+        background: #17C969; }
+  .pin .button {
+    margin-top: 20px;
+    max-width: 230px; }
+
+.deleteIcon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url("../images/close.svg") top left no-repeat;
+  background-size: contain; }
+
+.okIcon {
+  width: 34px;
+  height: 32px;
+  display: inline-block;
+  background: url("../images/ok.svg") top left no-repeat;
+  background-size: contain; }

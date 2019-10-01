@@ -173,7 +173,7 @@ body {
 
   &--cup {
     .product__image {
-      margin-right: 30px;
+      left: -10px;
     }
   }
 }
@@ -199,6 +199,7 @@ body {
   border-radius: 10px;
   transition: none;
   text-align: center;
+  min-width: 100px;
 
   &:active, &.green:active {
     background-color: $colorAdditional;
@@ -206,8 +207,6 @@ body {
 
   &.green {
     background-color: #17C969;
-
-    
   }
 }
 
@@ -234,7 +233,7 @@ body {
     padding: 40px;
     text-align: center;
 
-    img {
+    img, video {
       max-width: 100%;
       display: block;
     }
@@ -252,5 +251,147 @@ body {
     }
   }
 }
+
+.selfie {
+
+  position: relative;
+  width: 100%;
+  background: red;
+
+  &__faceoutline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -121px;
+    margin-top: -169px;
+    width: 242px;
+    height: 338px;
+    background: url('../images/oval.svg') top left no-repeat;
+    background-size: contain;
+  }
+}
+
+.pin {
+  text-align: center;
+  padding: 0 0;
+  white-space: normal;
+  
+  .title {
+    font-size: 1.285rem;
+    padding: 0 50px;
+  }
+
+  .info {
+    font-size: 0.785rem;
+    height: 20px;
+    margin-top: 20px;
+    padding: 0 50px;
+  }
+
+  .subText { 
+    font-size: 1rem;
+    padding-top: 20px;
+    height: 20px;
+  }
+
+  .points {
+    margin: 50px 0 0 0;
+    font-size: 0;
+    line-height: 0;
+    min-height: 13px;
+
+    li { 
+      display: inline-block;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background: #B4B4B4;
+      margin: 0 10px 0 10px;
+
+      &.active { background: #00AEEF }
+
+      &:nth-last-child(15):first-child, &:nth-last-child(15):first-child ~ li { margin: 0 5px; }
+      &:nth-last-child(14):first-child, &:nth-last-child(14):first-child ~ li { margin: 0 5px;}
+      &:nth-last-child(13):first-child, &:nth-last-child(13):first-child ~ li { margin: 0 5px;}
+      &:nth-last-child(12):first-child, &:nth-last-child(12):first-child ~ li { margin: 0 5px;}
+      &:nth-last-child(11):first-child, &:nth-last-child(11):first-child ~ li { margin: 0 5px;}
+      &:nth-last-child(10):first-child, &:nth-last-child(10):first-child ~ li { margin: 0 5px;}
+      &:nth-last-child(9):first-child, &:nth-last-child(9):first-child ~ li { margin: 0 5px 0 5px;}
+      &:nth-last-child(8):first-child, &:nth-last-child(8):first-child ~ li { margin: 0 6px 0 6px;}
+      &:nth-last-child(7):first-child, &:nth-last-child(7):first-child ~ li { margin: 0 7px 0 7px;}
+      &:nth-last-child(6):first-child, &:nth-last-child(6):first-child ~ li { margin: 0 8px 0 8px;}
+      &:nth-last-child(5):first-child, &:nth-last-child(5):first-child ~ li { margin: 0 10px 0 10px;}
+      &:nth-last-child(4):first-child, &:nth-last-child(4):first-child ~ li { margin: 0 12px 0 12px;}
+      &:nth-last-child(3):first-child, &:nth-last-child(3):first-child ~ li { margin: 0 14px 0 14px;}
+      &:nth-last-child(2):first-child, &:nth-last-child(2):first-child ~ li { margin: 0 16px 0 16px;}
+
+    }
+  }
+
+  .numbers { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 270px;
+    margin: 35px auto 0 auto;
+
+    li { 
+      border-radius: 10px;
+      width: 70px;
+      height: 70px;
+      border: none;
+      background: #00AEEF;
+      margin: 12px 6px 0 6px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.857rem;
+      font-weight: 300;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      &:active, &.red:active, &.green:active {
+        background: #979797;
+      }
+
+      &.disabled {
+        background: #DCDCDC;
+      }
+
+      &.red {
+        background: #E84848;
+      }
+
+      &.green {
+        background: #17C969;
+      }
+    }
+
+  }
+
+  .button {
+    margin-top: 20px;
+    max-width: 230px;
+  }
+
+}
+
+
+.deleteIcon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url('../images/close.svg') top left no-repeat;
+  background-size: contain;
+}
+
+.okIcon {
+  width: 34px;
+  height: 32px;
+  display: inline-block;
+  background: url('../images/ok.svg') top left no-repeat;
+  background-size: contain;
+}
+
 
 
