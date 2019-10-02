@@ -91,6 +91,13 @@ body {
   bottom: 0;
   left: 0;
   right: 0; }
+  .main--head {
+    justify-content: center; }
+    .main--head .header {
+      align-items: center;
+      text-align: center;
+      flex: 0;
+      margin-bottom: 50px; }
 
 .wrapper {
   max-width: 80%; }
@@ -104,9 +111,17 @@ body {
   width: 100%; }
   .header__text {
     padding-top: 20px; }
+  .header__greeting {
+    padding-top: 40px;
+    font-size: 1.5rem; }
+  .header__info {
+    padding-top: 20px;
+    color: #979797;
+    font-size: 1.125rem;
+    line-height: 1.2; }
 
 .logo {
-  background: url("../images/logo.svg") no-repeat left top;
+  background: url("../images/logo.svg") no-repeat center center;
   height: 45px;
   background-size: contain; }
 
@@ -416,3 +431,34 @@ body {
 
 .status__state {
   padding-top: 40px; }
+
+.list {
+  max-width: 340px;
+  padding: 20px 0 0 0;
+  margin: 0 auto;
+  border-top: 1px solid #DCDCDC;
+  text-align: left;
+  margin-top: 30px; }
+  .list:first-child {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0; }
+  .list__currency {
+    font-weight: 300;
+    font-size: 3.25rem;
+    padding-top: 20px; }
+  .list__symbol {
+    display: inline-block;
+    vertical-align: middle;
+    color: #00AEEF; }
+  .list__amount {
+    display: inline-block;
+    vertical-align: middle;
+    color: #02A84E; }
+    .list__amount.list__amount--red {
+      color: #E84848; }
+  .list__title {
+    font-size: 1.5rem; }
+
+.buttonUnderList {
+  margin-top: 50px; }

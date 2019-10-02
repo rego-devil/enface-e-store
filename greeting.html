@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>SafeADMobile</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta id="viewport" name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="main main--head">
+    <div class="header wrapper">
+      <div>
+        <div class="logo"></div>
+        <div class="header__greeting">
+          Welcome,<br />UserName
+        </div>
+        <div class="header__info">
+          Email: username@gmail.com<br />
+          Phone number: +1 347 8987 8987
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="list">
+        <div class="list__title">USD wallet</div>
+        <div class="list__currency">
+          <span class="list__symbol">$</span>
+          <span class="list__amount">1350.00</span>
+        </div>
+      </div>
+      <div class="list">
+        <div class="list__title">EUR wallet</div>
+        <div class="list__currency">
+          <span class="list__symbol">$</span>
+          <span class="list__amount">840.00</span>
+        </div>
+      </div>
+      <div class="list">
+        <div class="list__title">RUB wallet</div>
+        <div class="list__currency">
+          <span class="list__symbol">$</span>
+          <span class="list__amount list__amount--red">0</span>
+        </div>
+      </div>
+      <div class='button buttonUnderList'>Back</div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('.products').addEventListener('click', function (event) {
+        var element = event.target.closest('.product');
+
+        if (!element) return;
+
+        element.classList.toggle('active');
+
+        setTimeout(function () {
+          element.classList.toggle('active');
+        }, 300);
+      });
+    });
+  </script>
+</body>
+
+</html>
