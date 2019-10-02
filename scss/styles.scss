@@ -254,12 +254,19 @@ body {
       }
     }
   }
+
+  &__inner {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .selfie {
   position: relative;
   width: 100%;
-  min-height: 400px;
  
 
   &__faceoutline {

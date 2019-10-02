@@ -232,11 +232,16 @@ body {
         margin-left: 20px; }
         .overlay__content .controls .button:first-child {
           margin-left: 0; }
+  .overlay__inner {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
 
 .selfie {
   position: relative;
-  width: 100%;
-  min-height: 400px; }
+  width: 100%; }
   .selfie__faceoutline {
     position: absolute;
     top: 50%;
